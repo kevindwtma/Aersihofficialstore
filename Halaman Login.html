@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Aerish Official Store</title>
+    
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f5f5f5;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+        .login-container {
+            background-color: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            width: 300px;
+            text-align: center;
+        }
+        .login-container img {
+            width: 100px;
+            height: 100px;
+            vertical-align: middle;
+        }
+        .login-container h1 {
+            font-size: 18px;
+            margin: 10px 0 20px;
+        }
+        .login-container input[type="text"],
+        .login-container input[type="password"] {
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            box-sizing: border-box;
+        }
+        .login-container input[type="password"] {
+            background-color: #e6f0ff;
+        }
+        .login-container button {
+            background-color: #007bff;
+            color: white;
+            padding: 10px;
+            border: none;
+            border-radius: 5px;
+            width: 100%;
+            cursor: pointer;
+            font-size: 16px;
+        }
+        .login-container button:hover {
+            background-color: #0056b3;
+        }
+        .login-container a {
+            display: block;
+            margin: 10px 0;
+            color: #007bff;
+            text-decoration: none;
+        }
+        .login-container a:hover {
+            text-decoration: underline;
+        }
+        .login-container .cookies-notice {
+            background-color: #d3d3d3;
+            color: black;
+            padding: 10px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 14px;
+        }
+    </style>
+</head>
+<body>
+
+<script>
+    
+    window.onload = function() {
+        Swal.fire({
+            title: 'Selamat datang di Aerish Official Store!',
+            text: 'Login hanya untuk ADMINISTRATOR',
+            icon: 'info',
+            confirmButtonText: 'OK'
+        });
+    };
+
+    
+    function handleLogin() {
+        
+        Swal.fire({
+            title: 'Login Sukses!',
+            text: 'Selamat datang di Aerish Official Store.',
+            icon: 'success',
+            confirmButtonText: 'OK'
+        });
+    }
+</script>
+
+<div class="login-container">
+    <img alt="Aerish Official Store" src="aerish.jpg"/>
+    <h1>Aerish Official Store</h1>
+    <input placeholder="Username" type="text" id="Username"/>
+    <input placeholder="Password" type="password" id="password"/>
+    <button onclick="handleLogin()">Log in</button>
+    <a href="#">Lost password?</a>
+    <hr/>
+    <a href="https://wa.me/6289674928136" class="cookies-notice">
+        Terjadi Masalah? <br>
+        Klik Disini Untuk Hubungi Admin
+    </a>
+</div>
+
+</body>
+</html>

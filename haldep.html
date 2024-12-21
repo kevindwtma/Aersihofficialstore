@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Perusahaan Aksesoris Gadget dan Drone</title>
+
+    <style>
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Arial', sans-serif;
+            line-height: 1.6;
+            background-color: #f4f4f4;
+            color: #181a18;
+        }
+
+        header {
+            background-color: #000000;
+            color: #ecf0f1;
+            padding: 15px 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+
+        header .logo {
+            font-size: 24px;
+            font-weight: bold;
+        }
+
+        header nav ul {
+            list-style: none;
+            display: flex;
+            gap: 15px;
+        }
+
+        header nav ul li {
+            display: inline;
+        }
+
+        header nav ul li a {
+            color: white;
+            padding: 5px 5px;
+            text-decoration: none;
+            font-size: 16px;
+            border-radius: 5px;
+            transition: background-color 0.3s;
+        }
+
+        header nav ul li a:hover {
+                background-color: #e67e22;
+        }
+        .hero {
+            background: url('https://img.freepik.com/premium-vector/abstract-seamless-pattern-geometric-background-with-polygonal-golden-lines-stylish-texture_120542-1606.jpg?w=1060') no-repeat center center/cover;
+            color: #fff;
+            text-align: center;
+            padding: 80px 0;
+        }
+
+        .hero h2 {
+            font-size: 48px;
+            margin-bottom: 20px;
+        }
+
+        .hero p {
+            font-size: 24px;
+            margin-bottom: 30px;
+        }
+
+        .hero .btn {
+            background-color: #f39c12;
+            color: white;
+            padding: 15px 30px;
+            text-decoration: none;
+            font-size: 18px;
+            border-radius: 5px;
+            transition: background-color 0.3s;
+        }
+
+        .hero .btn:hover {
+            background-color: #e67e22;
+        }
+
+        .produk {
+            text-align: center;
+            padding: 50px 0;
+            background-color: #fff;
+        }
+
+        .produk h2 {
+            font-size: 36px;
+            margin-bottom: 30px;
+            color: #333;
+        }
+
+        .produk .produk-grid {
+            display: flex;
+            justify-content: space-around;
+            gap: 30px;
+            flex-wrap: wrap;
+        }
+
+        .produk .produk-item {
+            background-color: #fff;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            padding: 20px;
+            width: 30%;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s;
+        }
+
+        .produk .produk-item img {
+            width: 100%;
+            height: auto;
+            border-radius: 8px;
+        }
+
+        .produk .produk-item h3 {
+            margin-top: 20px;
+            font-size: 22px;
+        }
+
+        .produk .produk-item p {
+            font-size: 18px;
+            margin-bottom: 10px;
+        }
+
+        .produk .produk-item .btn {
+            background-color: #f39c12;
+            color: white;
+            padding: 10px 20px;
+            text-decoration: none;
+            border-radius: 5px;
+            font-weight: bold;
+            transition: background-color 0.3s;
+        }
+
+        .produk .produk-item:hover {
+            transform: translateY(-10px);
+        }
+
+        .produk .produk-item:hover .btn {
+            background-color: #e67e22;
+        }
+
+        .tentang {
+            padding: 50px 20px;
+            background-color: #f9f9f9;
+            text-align: center;
+        }
+
+        .tentang h2 {
+            font-size: 36px;
+            margin-bottom: 20px;
+        }
+
+        .tentang p {
+            font-size: 20px;
+            line-height: 1.8;
+            color: #555;
+            margin-bottom: 30px;
+        }
+
+        .kontak {
+            background-color: #f4f4f4;
+            padding: 50px 20px;
+            text-align: center;
+        }
+
+        .kontak h2 {
+            font-size: 36px;
+            margin-bottom: 20px;
+        }
+
+        footer {
+            background-color: #333;
+            color: #fff;
+            padding: 20px;
+            text-align: center;
+        }
+
+        footer p {
+            margin-bottom: 10px;
+        }
+
+        footer .social-media a {
+            color: #fff;
+            margin: 0 10px;
+            text-decoration: none;
+            font-size: 18px;
+        }
+
+        footer .social-media a:hover {
+            color: #f39c12;
+        }
+
+        @media (max-width: 768px) {
+            .produk .produk-grid {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .produk .produk-item {
+                width: 80%;
+                margin-bottom: 20px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <h1>Aerish Official Store</h1>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#home">Beranda</a></li>
+                <li><a href="index.html">Produk</a></li>
+                <li><a href="#tentang">Tentang Kami</a></li>
+                <li><a href="Halaman Login.html">Login</a></li>
+                <li><a href="https://wa.me/6283825220313">Kontak Kami</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <h2>Solusi Aksesoris Gadget & Drone Berkualitas</h2>
+            <p>Temukan produk aksesoris dronemu!</p>
+            <a href="halaman produk sebelum login.html" class="btn">Lihat Produk Kami</a>
+        </div>
+    </section>
+
+    <section id="produk" class="produk">
+        <h2>Produk Unggulan</h2>
+        <div class="produk-grid">
+            <div class="produk-item">
+                <img src="300battery.png" alt="yunnec">
+                <h3>YUNEEC BATTERY H520</h3>
+                <p>Battery Drone YUNEEC BATTERY H520. Untuk Cadangan Battery Dronemu</p>
+                <p><strong>Rp 2,525,000</strong></p>
+                <a href="Pembayaran YUNEEC Battery H520.html" class="btn">Beli Sekarang</a>
+            </div>
+            <div class="produk-item">
+                <img src="300dji p4 charger combo hub.png" alt="Aksesoris Gadget">
+                <h3>DJI INSPIRE 2 BATTERY CHARGING HUB</h3>
+                <p>Aksesoris DJI untuk Charging maksimal.</p>
+                <p><strong>Rp 350,000</strong></p>
+                <a href="Pembayaran DJI Inspire 2 Battery Charging Hub.html" class="btn">Beli Sekarang</a>
+            </div>
+            <div class="produk-item">
+                <img src="300charging hub DJI.png" alt="Charger Drone">
+                <h3>Charger Drone DJI P3</h3>
+                <p>Charger cepat dan aman untuk drone Anda.</p>
+                <p><strong>Rp 500,000</strong></p>
+                <a href="Pembayaran Charger Drone DJI Phantom 3.html" class="btn">Beli Sekarang</a>
+            </div>
+        </div>
+    </section>
+
+   
+    <section id="tentang" class="tentang">
+        <h2>Tentang Kami</h2>
+        <p>Kami adalah perusahaan yang menyediakan aksesoris gadget dan drone berkualitas tinggi. Dengan komitmen untuk inovasi dan kepuasan pelanggan, kami menghadirkan produk yang mempermudah pengalaman teknologi Anda. Kami bekerja sama dengan produsen resmi dari merek-merek ternama</p>
+    </section>
+    <footer>
+        <p>&copy; 2024 Aerish Official Store | Perusahaan Aksesoris Gadget & Drone</p>
+        <div class="social-media">
+            <a href="https://instagram.com/kevindwtma_">Instagram</a>
+            <a href="https://wa.me/6283825220313">WhatsApp</a>
+            <a href="mailto:kevindwitama83@gmail.com">Email</a>
+            <a href="https://www.tokopedia.com/aerishofficialstore">Tokopedia</a>
+        </div>
+    </footer>
+
+</body>
+</html>
